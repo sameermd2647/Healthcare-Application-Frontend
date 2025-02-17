@@ -1,0 +1,6 @@
+<h2>Patient List</h2>
+<ul>
+  <li *ngFor="let patient of patients">
+    <a [routerLink]="['/patients', patient.id]">{{ patient.name }} (DOB: {{ patient.dob | date }})</a>
+  </li>
+</ul>

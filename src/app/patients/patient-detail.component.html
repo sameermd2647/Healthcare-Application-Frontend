@@ -1,0 +1,7 @@
+<h2>Patient Details</h2>
+<div *ngIf="patient">
+  <p><strong>Name:</strong> {{ patient.name }}</p>
+  <p><strong>Date of Birth:</strong> {{ patient.dob | date }}</p>
+  <p><strong>Diagnosis:</strong> {{ patient.diagnosis }}</p>
+  <a routerLink="/patients">Back to Patients List</a>
+</div>
